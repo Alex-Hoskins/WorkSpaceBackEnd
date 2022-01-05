@@ -3,6 +3,7 @@ const helmet = require('helmet')
 const cors = require('cors')
 const userRouter=require('./data/routers/users/user-router')
 const authRouter = require('./data/routers/auth/auth-router')
+const workspaceRouter = require('./data/routers/workspaces/workspace-router')
 
 const server = express()
 server.use(express.json())
@@ -11,6 +12,7 @@ server.use(cors())
 
 server.use('/api/users',userRouter)
 server.use('/api/auth',authRouter)
+server.use('/api/workspace',workspaceRouter)
 
 server.use((err, req, res, next) => { 
   res.status(err.status || 500).json({
