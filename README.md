@@ -20,12 +20,12 @@ I utilized middleware in order to seperate concerns and keep my code DRY (Don't 
 
 ## Lessons Learned:  
 
-**1)** It is critical to get your database information correct. Take your time in the beginning to figure out the structure of the application that makes sense. It could be a headache going back to fix a database structure that is faulty.
+**1)** It is critical to get your database information correct. Take your time in the beginning to figure out the structure of the application so it makes sense. It could be a headache going back to fix a database structure that is faulty.
 
 **2)** Reusing middleware is the way to go! It is much easier to pull middleware functions from a centralized location, rather than rewriting code. This make the code more readable, reusable, and clean. It's all around better. 
 
 ## Examples:
-Take a look at these couple examples that I have in my own portfolio:
+Take a look at these other examples that I have in my own portfolio:
 
 **African Marketplace:** https://vercel.com/alex-hoskins/african-marketplace
 
