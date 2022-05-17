@@ -16,13 +16,13 @@ The backend API was created with Node/Express, with endpoints that send and rece
 
 ## Optimizations: 
 
-We utilized middleware in order to seperate concerns and keep or code DRY (Don't repeat yourself). We have our middleware sectioned in different files according to their usecases. The entire application is modular in nature with different files for our server, routers, middleware, models, seeds, configuration, etc...
+I utilized middleware in order to seperate concerns and keep my code DRY (Don't repeat yourself). I have middleware sectioned in different files according to their usecases. The entire application is modular in nature with different files for the server, routers, middlewares, models, seeds, configuration, etc...
 
 ## Lessons Learned:  
 
-**1)** There is a lot of boilerplate code when using redux. Every time you wanted to create a new action you had to touch three files in order to get the action to work. This seems repetitive and not very DRY. Next time I will explore context API a bit more but Redux got the job done in this project.
+**1)** It is critical to get your database information correct. Take your time in the beginning to figure out the structure of the application that makes sense. It could be a headache going back to fix a database structure that is faulty.
 
-**2)** Due to the large amounts of components, it was tricky making sure all of the routing was correct. I wanted to make sure when you clicked on a WorkSpace, or any specific component, that the route corresponed correctly. This allows the forward and back arrows to work correctly when you are navigating the history on the browser. 
+**2)** Reusing middleware is the way to go! It is much easier to pull middleware functions from a centralized location, rather than rewriting code. This make the code more readable, reusable, and clean. It's all around better. 
 
 ## Examples:
 Take a look at these couple examples that I have in my own portfolio:
