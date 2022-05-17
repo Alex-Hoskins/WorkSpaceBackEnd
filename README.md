@@ -12,11 +12,11 @@ The backend is deployed using Heroku and it connects to the WorkSpace frontend r
 ## How It's Made:
 **Tech used:** Node, Express, JavaScript, PostgreSQL, JSON Web Tokens, Heroku
 
-The backend API was created with Node/Express, with endpoints that send and receive user & workspace data. We utilized a PostgreSQL database, complete with seed, migration, and dotenv files. React-thunk was utilized so that the actions could be more dynamic and have a broader use. We installed axios and used it to make CRUD requests.
+The backend API was created with Node/Express, with endpoints that send and receive user & workspace data. We utilized a PostgreSQL database, complete with seed, migration, and dotenv files. This is a CRUD app that is meant to create, read, update, and delete information. We also have an auth router that allows us to authenticate users.
 
 ## Optimizations: 
 
-I utilized react in order to make large, reusable components. I started creating a filter so that users could more easily navigate to a workspace that fits their needs. I want to expand on this filter and optimize beyond MVP.
+We utilized middleware in order to seperate concerns and keep or code DRY (Don't repeat yourself). We have our middleware sectioned in different files according to their usecases. The entire application is modular in nature with different files for our server, routers, middleware, models, seeds, configuration, etc...
 
 ## Lessons Learned:  
 
